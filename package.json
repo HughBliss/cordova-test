@@ -13,12 +13,16 @@
   "author": "Apache Cordova Team",
   "license": "Apache-2.0",
   "devDependencies": {
-    "cordova-ios": "^6.2.0"
+    "cordova-ios": "^6.2.0",
+    "cordova-plugin-add-swift-support": "^2.0.2",
+    "cordova-plugin-atol-provider": "file:../AtolProvider"
   },
   "cordova": {
     "platforms": [
       "ios"
     ],
-    "plugins": {}
+    "plugins": {
+      "cordova.plugin.kkm.provider": {}
+    }
   }
 }

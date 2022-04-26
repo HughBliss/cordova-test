@@ -1,0 +1,43 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "config.xml": {
+        "parents": {
+          "*": [
+            {
+              "xml": "<feature name=\"KkmProvider\"><param name=\"ios-package\" value=\"KkmProvider\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-plugin-add-swift-support": {
+      "PACKAGE_NAME": "com.example.hello"
+    },
+    "cordova.plugin.kkm.provider": {
+      "PACKAGE_NAME": "com.example.hello"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "cordova.plugin.kkm.provider.KkmProvider",
+      "file": "plugins/cordova.plugin.kkm.provider/www/KkmProvider.js",
+      "pluginId": "cordova.plugin.kkm.provider",
+      "clobbers": [
+        "cordova.plugins.KkmProvider"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-add-swift-support": "2.0.2",
+    "cordova.plugin.kkm.provider": "0.0.5"
+  }
+}
